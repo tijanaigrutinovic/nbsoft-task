@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="src/scss/styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+
+    <div class="nav">
+        <a href="/">CV Template</a>
+        <a href="form.html">Form</a>
+        <a href="slider.html">Slider</a>
+    </div>
+    
+    <div class="main-container align-items-center p-md-5 p-3">
+        <form class="form" novalidate>
+            <div class="mb-3">
+                <label for="firstName" class="form-label">Ime</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                <div class="invalid-feedback">Molimo vas da unesete ime.</div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Prezime</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                <div class="invalid-feedback">Molimo vas da unesete prezime.</div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="gender" class="form-label">Pol</label>
+                <select class="form-select" id="gender" name="gender" required>
+                    <option value="">Izaberite pol</option>
+                    <option value="male">Muški</option>
+                    <option value="female">Ženski</option>
+                    <option value="other">Ostalo</option>
+                </select>
+                <div class="invalid-feedback">Molimo vas da izaberete pol.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="birthYear" class="form-label">Godina rođenja</label>
+                <input type="number" class="form-control" id="birthYear" name="birthYear" min="1900" max="2025" required>
+                <div class="invalid-feedback">Molimo vas da unesete godinu rođenja između 1900 i 2025.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="address" class="form-label">Adresa</label>
+                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+                <div class="invalid-feedback">Molimo vas da unesete adresu.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="city" class="form-label">Grad</label>
+                <input type="text" class="form-control" id="city" name="city" required>
+                <div class="invalid-feedback">Molimo vas da unesete grad.</div>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                <label class="form-check-label" for="terms">Slažem se sa uslovima korišćenja</label>
+                <div class="invalid-feedback">Morate prihvatiti uslove korišćenja.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit">Pošalji</button>
+        </form>
+        <div class="success-message">
+            Uspešno ste popunili formu. Ispod su vaši uneti podaci:
+            <ul class="submitted-data"></ul>
+        </div>
+    </div>
+    <script src="src/js/form-validation.js"></script>
+</body>
+</html>

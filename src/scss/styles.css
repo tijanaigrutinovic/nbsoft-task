@@ -166,4 +166,55 @@ ul li {
   }
 }
 
+form {
+  max-width: 700px;
+  padding: 20px;
+  background-color: #90b9ef;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.success-message {
+  display: none;
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+}
+.slider .img-slide {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  object-fit: cover;
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  .slider .img-slide {
+    width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+    padding: 10px;
+  }
+}
+
+.nav {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  max-width: 400px;
+  justify-content: space-between;
+}
+.nav a {
+  text-decoration: none;
+}
+
+.slider-body {
+  background-color: #90b9ef;
+}
+
 /*# sourceMappingURL=styles.css.map */
