@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function() {
     $('.slider').slick({
         centerMode: true,        
         slidesToShow: 3,          
