@@ -93,6 +93,10 @@ a {
   }
 }
 
+a:hover {
+  color: #2e2d2d;
+}
+
 span {
   font-size: 20px;
   color: #545454;

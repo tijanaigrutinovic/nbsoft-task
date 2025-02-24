@@ -1,5 +1,6 @@
 $primary: #90b9ef;
 $secondary: #545454;
+$hover: #2e2d2d;
 
 .main-container{
     max-width: 1440px;
@@ -79,6 +80,9 @@ a{
     @media screen and (max-width: 767px) {
         font-size: 18px;
     }
+}
+a:hover{
+    color: $hover;
 }
 
 span{
